@@ -2,12 +2,11 @@ import React from 'react';
 import { Register } from './Register';
 
 export class Main extends React.Component {
-    render () {
-      return (
-          <div className = "main">
-              <Register/>
-          </div>
-
-      )
-    };
+    render() {
+        return (
+            <section className="main">
+                <Register/>
+            </section>
+        );
+    }
 }
