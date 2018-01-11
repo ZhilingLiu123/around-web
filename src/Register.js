@@ -50,27 +50,32 @@ class RegistrationForm extends React.Component {
     }
     render() {
         const { getFieldDecorator } = this.props.form;
-        const formItemLayout = {
-            labelCol: {
-                xs: { span: 24 },
-                sm: { span: 6 },
-            },
-            wrapperCol: {
-                xs: { span: 24 },
-                sm: { span: 14 },
-            },
-        };
-        const tailFormItemLayout = {
-            wrapperCol: {
-                xs: {
-                    span: 24,
-                    offset: 0,
-                },
-                sm: {
-                    span: 14,
-                    offset: 6,
-                },
-            },
+        const formItemLayout = { 
+            labelCol:
+                { 
+                    xs:
+                        { span: 24 }, 
+                    sm: { span: 8 }, 
+                }, 
+            wrapperCol:
+                {         xs: { span: 24 }, 
+                    sm: { span: 16 }, 
+                }, 
+        }; 
+        const tailFormItemLayout = { 
+            wrapperCol:
+                { 
+                    xs:
+                        { 
+                            span: 24, 
+                            offset: 0, 
+                        }, 
+                    sm:
+                        { 
+                            span: 16, 
+                            offset: 8, 
+                        }, 
+                }, 
         };
         return (
             <Form onSubmit={this.handleSubmit} className="register-form">
